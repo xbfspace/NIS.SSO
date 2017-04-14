@@ -1,0 +1,14 @@
+NIS.CacheApi    http://localhost:53411/
+NIS.JSApp       http://localhost:56668/
+NIS.OpenApi     http://localhost:15736/
+NIS.SSOServer   http://localhost:38493/
+NIS.MvcApp      http://localhost:2509/
+NIS.MvcApp2     http://localhost:51132/
+NIS.LdapProviderSite http://localhost:22411/  认证提供商 ，类似于自由站点集成微信登录，相当于微信提供认证服务
+
+
+
+启动顺序：
+NIS.SSOServer >> NIS.CacheApi >>NIS.LdapProvierSite >> NIS.OpenApi >> NIS.JSApp
+                                             >> NIS.MvcApp
+											 >> NIS.MvcApp2
