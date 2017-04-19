@@ -54,8 +54,8 @@ namespace NIS.SSOServer
                 AuthenticationType = "Google",
                 Caption = "Google",
                 SignInAsAuthenticationType = signInAsType,
-                ClientId = "...",
-                ClientSecret = "..."
+                ClientId = "896086195489-i8iq0q8c64pps0lufe1msfkq6d7gg8gs.apps.googleusercontent.com",
+                ClientSecret = "PFu29lR97hJAey5Y6q6EnCgy"
             };
             app.UseGoogleAuthentication(google);
 

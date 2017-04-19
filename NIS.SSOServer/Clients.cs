@@ -56,7 +56,8 @@ namespace NIS.SSOServer
                    },
                    AllowAccessToAllScopes = true,
                    AllowedCorsOrigins = new List<string> {
-                       "http://localhost:51132"
+                       "http://localhost:51132",
+                       "https://www.google.com"
                    }
                },
                new Client {
