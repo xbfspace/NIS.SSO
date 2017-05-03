@@ -16,10 +16,11 @@ namespace NIS.SSOServer
     {
         public void Configuration(IAppBuilder app) {
             var factory = new IdentityServerServiceFactory()
-                 .UseInMemoryUsers(Users.Get())
+                 //.UseInMemoryUsers(Users.Get())
                  .UseInMemoryClients(Clients.Get())
                  .UseInMemoryScopes(Scopes.Get());
-
+           factory.ViewService = new Registration<IdentityServer3.Core.Services.IViewService>(typeof(CustomerServices.CustomerViewService));
+            factory.UserService = new Registration<IdentityServer3.Core.Services.IUserService>(typeof(CustomerServices.CustomerUserService));
            app.UseIdentityServer( new IdentityServerOptions
             {
                 RequireSsl =false,

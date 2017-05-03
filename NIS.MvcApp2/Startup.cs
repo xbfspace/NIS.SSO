@@ -18,6 +18,7 @@ namespace NIS.MvcApp2
     {
         public void Configuration(IAppBuilder app)
         {
+  
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = "Cookies"

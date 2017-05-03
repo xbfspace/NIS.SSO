@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+</head>
+<body>
+    <div class="page">
+        <div class="login-from">
+            <form name="loginForm" method="post" action="">
+                <input id="anti" type="hidden" name="" value="" />
+                <div class="row">
+                    <label for="">用户名</label>
+                    <input type="text" name="username">
+                </div>
+                <div class="row">
+                    <label for="">密码</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="row">
+                    <button type="submit">登录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="loginViewModel" style="display:none">
+        {LoginViewModel}
+    </div>
+    <script src="{LoginScript}"></script>
+</body>
+</html>
